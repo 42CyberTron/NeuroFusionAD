@@ -1,0 +1,44 @@
+{
+  "scope": "CPU clinical-only model tensor mechanics; empty MRI/PET buffers remain masked, and outputs are discarded after shape/finiteness checks",
+  "torch_version": "2.15.0+cpu",
+  "device": "cpu",
+  "threads": 4,
+  "results": [
+    {
+      "batch_size": 1,
+      "visits": 8,
+      "iterations": 100,
+      "mean_forward_ms": 0.987,
+      "p95_forward_ms": 1.352,
+      "abstract_sequences_per_second": 1013.25,
+      "all_outputs_finite": true
+    },
+    {
+      "batch_size": 8,
+      "visits": 8,
+      "iterations": 100,
+      "mean_forward_ms": 1.823,
+      "p95_forward_ms": 2.42,
+      "abstract_sequences_per_second": 4387.96,
+      "all_outputs_finite": true
+    },
+    {
+      "batch_size": 32,
+      "visits": 8,
+      "iterations": 100,
+      "mean_forward_ms": 3.712,
+      "p95_forward_ms": 4.604,
+      "abstract_sequences_per_second": 8620.36,
+      "all_outputs_finite": true
+    },
+    {
+      "batch_size": 64,
+      "visits": 8,
+      "iterations": 100,
+      "mean_forward_ms": 5.335,
+      "p95_forward_ms": 6.504,
+      "abstract_sequences_per_second": 11995.73,
+      "all_outputs_finite": true
+    }
+  ]
+}

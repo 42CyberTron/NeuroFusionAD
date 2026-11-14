@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+database/*.sqlite3
+data/uploads/
+data/openneuro_ds004504/
+data/processed/
+checkpoints/*.pt
+checkpoints/*.pth
+checkpoints/dataset_inventory.json
+evaluation/metrics.json
+evaluation/predictions.json
+evaluation/participant_splits.json
+*.partial
+IEEE_paper.pdf

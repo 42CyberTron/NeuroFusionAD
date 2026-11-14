@@ -1,0 +1,25 @@
+{
+  "seed": 42,
+  "sampling_frequency_hz": 128,
+  "window_seconds": 5,
+  "channels": 19,
+  "clinical_features": [
+    "age_z",
+    "mmse_z",
+    "gender_male",
+    "gender_female",
+    "age_missing",
+    "mmse_missing",
+    "gender_missing"
+  ],
+  "class_names": ["AD", "FTD", "CN"],
+  "hidden_size": 64,
+  "dropout": 0.25,
+  "batch_size": 64,
+  "epochs": 30,
+  "patience": 6,
+  "learning_rate": 0.0005,
+  "weight_decay": 0.0001,
+  "test_fraction": 0.2,
+  "validation_fraction_of_remainder": 0.2
+}

@@ -1,0 +1,45 @@
+{
+  "scope": "Randomized abstract tensors used only for software stress testing. No dataset, trained checkpoint, diagnostic output, or model performance is used or measured.",
+  "torch_version": "2.15.0+cpu",
+  "device": "cpu",
+  "threads": 4,
+  "peak_cuda_memory_bytes": null,
+  "results": [
+    {
+      "batch_size": 1,
+      "windows_per_inference": 1,
+      "iterations": 100,
+      "mean_forward_ms": 0.916,
+      "p95_forward_ms": 1.022,
+      "abstract_windows_per_second": 1091.52,
+      "all_outputs_finite": true
+    },
+    {
+      "batch_size": 8,
+      "windows_per_inference": 8,
+      "iterations": 100,
+      "mean_forward_ms": 1.89,
+      "p95_forward_ms": 2.491,
+      "abstract_windows_per_second": 4233.8,
+      "all_outputs_finite": true
+    },
+    {
+      "batch_size": 32,
+      "windows_per_inference": 32,
+      "iterations": 100,
+      "mean_forward_ms": 4.283,
+      "p95_forward_ms": 5.458,
+      "abstract_windows_per_second": 7470.74,
+      "all_outputs_finite": true
+    },
+    {
+      "batch_size": 64,
+      "windows_per_inference": 64,
+      "iterations": 100,
+      "mean_forward_ms": 7.659,
+      "p95_forward_ms": 9.369,
+      "abstract_windows_per_second": 8356.66,
+      "all_outputs_finite": true
+    }
+  ]
+}
